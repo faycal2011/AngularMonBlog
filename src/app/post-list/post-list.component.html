@@ -1,0 +1,23 @@
+<div   class="container"  [ngClass]="{'list-group-item' : true ,
+                  'list-group-item-success' : postLoveIts > 0 ,
+                  'list-group-item-danger' : postLoveIts < 0  }">
+
+ <div class="row" >
+ <div class="col-xs-6"  style="font-size: 25px; font-weight: bold">  {{ postTitle}}   </div>
+ <div class="col-xs-6" class="text-right" > Date : {{ postCreate_at | date :'short' }} </div>
+ </div> 
+<div class="row">
+  <div class="col-xs-12" >
+  {{ postContent }} 
+
+  </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-xs-12" >
+  <button class="btn btn-success" (click)="onLoveIt()">Love it!</button>
+  <span>&nbsp;</span>
+  <button class="btn btn-danger" (click)="onDontLoveIt()">Don't love it!</button>
+</div>
+  </div>
+</div>
