@@ -1,2 +1,2 @@
 # AngularMonBlog
-Projet exercice sur Angular
+Projet exercice sur Angular fournu pour vérification
